@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/images/Favicon-32x32.png">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>globeTrek</title>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <img src="images/main-logo-black.png" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                <ul>
+                    <li class="sub-menu">
+                        <div class="dropdown">
+                            <button class="dropbtn">services
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">serve</a>
+                              <a href="#">serve 2</a>
+                              <a href="#">serve 3</a>
+                            </div>
+                </ul>
+                </li>
+                <li><a class = "active"  href="blog.html">blog</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="blog-posts" id="blog-posts">
+        <!-- Blog posts will be dynamically added here -->
+    </div>
+
+        <div class="create-blog-form hidden" id="create-blog-form">
+            <h2>Create New Blog</h2>
+            <input type="file" id="blog-image" accept="image/*" style="display: block;">
+            <input type="text" placeholder="Title" id="blog-title">
+            <textarea placeholder="Content" id="blog-content" style="display: block;"></textarea>
+            <button id="submit-blog-btn" onclick="submitBlog()">Submit</button>
+        </div>
+
+   
+    <script src="js/scripts.js"></script>
+</body>
+</html>
